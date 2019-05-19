@@ -34,9 +34,11 @@ class Song
 
 
  def self.genre_count
-   @@genres.each_with_object(Hash.new(0)) do |key, hash|
-     hash[key] += 1
+   array = {}
+   @@artists.each do|song|
+    array[] << song
    end
+   array
  end
 
  def self.artist_count
