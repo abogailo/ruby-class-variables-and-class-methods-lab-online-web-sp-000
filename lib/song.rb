@@ -24,7 +24,7 @@ class Song
  end
 
  def artists
-   @@artists.uniq
+   @@artist.uniq
    #this only grabs an artist one time. No Beyonce, beyonce in this list
  end
 
@@ -34,11 +34,9 @@ class Song
  end
 
  def genre_count
-  self.genre.count
  end
 
  def artist_count
-   self.artist.count
  end
 
 end
