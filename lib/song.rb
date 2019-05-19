@@ -24,17 +24,17 @@ class Song
  end
 
  def self.artists
-   @@artist.uniq
+   @@artists.uniq
    #this only grabs an artist one time. No Beyonce, beyonce in this list
  end
 
  def self.genres
-   @@genre.uniq
+   @@genres.uniq
    #this only grabs a genre once. There will be no duplicates.
  end
 
  def genre_count
-   @@genres.each_with_object(Hash.new(0)) do |key, hash|
+   @@genres.each_with_object(Hash.new(0)) do |key, hash| 
      hash[key] += 1
    end
  end
