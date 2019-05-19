@@ -18,7 +18,7 @@ class Song
  end
 
  def self.count
-  @@count
+   @@count
  end
 
  def self.genres
@@ -33,13 +33,13 @@ class Song
 
 
 
- def genre_count
+ def self.genre_count
    @@genres.each_with_object(Hash.new(0)) do |key, hash|
      hash[key] += 1
    end
  end
 
- def artist_count
+ def self.artist_count
    @@artists.each_with_object(Hash.new(0)) do |key, hash|
    hash[key] += 1
  end
