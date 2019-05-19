@@ -23,12 +23,12 @@ class Song
   @@count
  end
 
- def artists
+ def self.artists
    @@artist.uniq
    #this only grabs an artist one time. No Beyonce, beyonce in this list
  end
 
- def genres
+ def self.genres
    @@genre.uniq
    #this only grabs a genre once. There will be no duplicates.
  end
