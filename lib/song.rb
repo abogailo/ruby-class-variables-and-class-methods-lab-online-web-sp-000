@@ -1,11 +1,9 @@
 class Song
- attr_accessor = :name, :artist, :genre
+ attr_accessor :name, :artist, :genre
+ 
  @@count = 0
- #this counts stuffs
  @@artists = []
- #this is a class variable used by class method artists
  @@genres = []
- #this is a class variable used by class method genres
 
  def initialize(name, artist, genre)
 
