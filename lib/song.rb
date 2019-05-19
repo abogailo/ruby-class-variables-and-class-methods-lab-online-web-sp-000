@@ -36,16 +36,16 @@ class Song
  def self.genre_count
    array = {}
    @@genres.each do|song|
-    array[song] ||= 0
+    array[song] ||= 0 # count starts at 0
     array[song] += 1
    end
    array
  end
 
  def self.artist_count
-   @@artists.each_with_object(Hash.new(0)) do |key, hash|
-   hash[key] += 1
- end
+   @@artists.each_with_object(Hash.new(0)) do |artist, songs|
+   songs[artist] += 1
+  end
  end
 
 end
