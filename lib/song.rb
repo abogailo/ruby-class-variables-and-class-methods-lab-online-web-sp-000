@@ -34,17 +34,11 @@ class Song
  end
 
  def genre_count
-   array = {}
-   @@genres.each do |genre|
-  array << artist
-  array.count
+  self.genre.count
  end
 
  def artist_count
-   array = {}
-   @@artists.each do |artist|
-  array << artist
-  array.count
+   self.artist.count
  end
 
 end
