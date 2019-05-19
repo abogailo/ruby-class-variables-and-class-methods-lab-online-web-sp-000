@@ -36,7 +36,7 @@ class Song
  def self.genre_count
    array = {}
    @@artists.each do|song|
-    array[] << song
+    array[song] += 1
    end
    array
  end
