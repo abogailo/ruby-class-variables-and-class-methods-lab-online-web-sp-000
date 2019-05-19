@@ -27,13 +27,13 @@ class Song
    @@genres.uniq
    #this only grabs a genre once. There will be no duplicates.
  end
- 
+
  def self.artists
    @@artists.uniq
    #this only grabs an artist one time. No Beyonce, beyonce in this list
  end
 
- 
+
 
  def genre_count
    @@genres.each_with_object(Hash.new(0)) do |key, hash|
